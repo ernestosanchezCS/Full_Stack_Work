@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Ernesto Sanchez - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Assets/images/ESfavicon.png">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <h1>Ernesto Sanchez</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+            <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section style="background-image: url('Assets/images/backpic.jpeg');" class="hero" id="about">
+        <img src="assets/images/pic1.jpg" alt="ernesto-pic" loading="lazy" class="hero-img" />
+        <div class="bio animate__animated animate__shakeX">
+            <h2 class="bio-title">About Me</h2>
+            <p class="bio-text">
+                Hello and welcome to my porfolio website.
+                My name is Ernesto Sanchez, originally from Guadalajara Mexico.
+                I love to code! Computer science and programming is such a fast moving
+                environment I enjoy the ever changing landscape and how it keeps me on my feet learning new things.
+                Other hobbies of mine include F1 racing, european
+                football and boxing.
+            </p>
+        </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+            Pursuing and aquiring a meaningful career in software development is a main goal of mine. I have
+            been working with software for around 7 years in total. Currently my favourite topics include blockchain
+            development and smart contracts, particularly Solidity (Ethereum). C++ was my native
+            language but since then I have added Java/Javascript, Python, Swift, Solidity
+            and Ruby to my known languages. Other software that I am familiar with includes matlab, HTML and CSS.
+        </p>
+        <p>
+            Spoken Languages: English (Fluent), Spanish (Fluent) and French (Intermediate)
+        </p>
+
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-react-native.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Some of my Projects Include</h2>
+        <div class="projects-container">
+            <div class="project-container project-card">
+                <a href="https://github.com/ernestosanchezCS/solidity_Lottery.git"><img
+                        src="assets/images/ether-pic.jpeg" alt="ether-pic" class="project-pic"></a>
+                <h3 class="project-title">Ethereum Blockchain Lottery</h3>
+                <p class="project-details">
+                    A Ethereum blockchain lottery smart contract written in Solidity. With
+                    Python support for interacting with web3. This lottery project was deployed
+                    to a real decentralized blockchain (Rinkeby testnet)!
+                </p>
+                <a href="https://github.com/ernestosanchezCS/solidity_Lottery.git" target="_blank"
+                    class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <a href="#"><img src="assets/images/dnapic.jpeg" alt="dna-pic" class="project-pic"></a>
+                <h3 class="project-title">DNA Sequence Matching Algorithm</h3>
+                <p class="project-details">
+                    A Java language code project using the Runge-Kutta method to find the
+                    percentage of similarity between any two DNA sequences.
+                </p>
+                <a href="#" target="_blank" class="project-link">Check it Out</a>
+            </div>
+            <div class="project-container project-card">
+                <a href="https://www.youtube.com/watch?v=6EKHBgEOsB4"><img src="assets/images/braillepic.jpeg"
+                        alt="braille-pic" class="project-pic"></a>
+                <h3 class="project-title">Text2Braille</h3>
+                <p class="project-details">
+                    A android application that forwards incoming text messages to a 3D
+                    printed device using a Bluetooth connection and an Arduino (microcomputer).
+                    This was made using C to interpret letters into Braille symbols
+                    which were then displayed.
+                </p>
+                <a href="https://www.youtube.com/watch?v=6EKHBgEOsB4" target="_blank" class="project-link">Check it
+                    Out</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <h3>Phone Number: </h3>
+        <p>+1 (647) 786-8014</p>
+        <h4>Email: </h4>
+        <p>ernestosanchez8888@gmail.com</p>
+        <br>
+        <h2>Click On My Social Buttons On the Right<br> Or Message Me Through This Form!</h2>
+        <div class="contact-form-container">
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xyylnggw" method="POST">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                            class="input-field" required />
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                            class="input-field" required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        <a href="https://twitter.com/Ernesto40744614" target="_blank"><img src="assets/icons/icons8-twitter-circled.gif"
+                alt="Twitter" loading="lazy" class="socicon" /></a>
+        <a href="https://instagram.com" target="_blank"><img src="assets/icons/icons8-instagram.gif" alt="Instagram"
+                loading="lazy" class="socicon" /></a>
+        <a href="https://www.linkedin.com/in/ernesto-sanchez-3aa82414a/" target="_blank"><img
+                src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+        <a href="https://github.com/ernestosanchezCS" target="_blank"><img src="assets/icons/icons8-github.gif"
+                alt="Github" class="socicon" /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+            alt="scroll-up-icon" /></i>
+
+    <!-- Footer section -->
+    <footer>
+        <p class="copy">
+            Built with &#x2661; by
+            <a href="https://www.linkedin.com/in/ernesto-sanchez-3aa82414a/" target="_blank">Ernesto Sanchez</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
